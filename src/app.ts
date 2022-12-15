@@ -1,4 +1,5 @@
 import { Server } from '@overnightjs/core';
+import { BurgerController } from './controllers/burger.controller';
 
 export class Application extends Server {
     constructor() {
@@ -13,6 +14,6 @@ export class Application extends Server {
     }
 
     private setupControllers() {
-        super.addControllers([]);
+        super.addControllers([new BurgerController()]);
     }
 }
