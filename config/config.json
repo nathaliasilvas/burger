@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "burger_staff",
+    "password": "admin123",
+    "database": "burger",
+    "host": "db4free.net",
+    "dialect": "mysql"
+  }
+}
