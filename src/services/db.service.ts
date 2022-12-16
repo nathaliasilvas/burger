@@ -5,7 +5,7 @@ class DbService {
 
     constructor() {
         this.connection = new Sequelize({
-            database: 'burger',
+            database: String(process.env.MYSQL_DATABASE),
             dialect: 'mysql',
             host: String(process.env.MYSQL_HOST),
             password: String(process.env.MYSQL_PASS),
