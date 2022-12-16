@@ -14,9 +14,12 @@ type MenuItemAttributes = MenuItem & {
 }
 
 export class MenuModel extends Model<MenuItemAttributes, Optional<MenuItemAttributes, 'id'>> {
+    declare id: number;
     declare name: string;
     declare description: string;
     declare price: number;
+    declare createdAt: any;
+    declare updatedAt: any;
 }
 
 MenuModel.init({
